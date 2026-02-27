@@ -16,3 +16,4 @@ Here -
 12. Okay, learnt that if there is any inconsistencies between PostgreSQL database schema and the database models in my model.py file... I'll face internal server error.
 13. Also learnt that dropdown can be used for ENUMS, i don't have to match my string from the options when testing APIs. Will use in my next project.
 14. Forms can also be used in replacement of Field. May use in my next project. 
+15. Okay, when pushing any new project into a repositry, make sure that my database_url is inside env folder and alongside with env, other folders like cache and local dumps inside database are not tracked by version control. Use .gitignore there. Need to fix that mistake now. 
