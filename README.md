@@ -1,7 +1,8 @@
+# LemonFlow (ML Experiment tracker)
+
 <p align="center">
   <img src="frontend/public/logo.svg" alt="LemonFlow Logo" width="200" />
 </p>
-# LemonFlow (ML Experiment tracker)
 
 ### Overview
 
