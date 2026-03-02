@@ -17,3 +17,4 @@ Here -
 13. Also learnt that dropdown can be used for ENUMS, i don't have to match my string from the options when testing APIs. Will use in my next project.
 14. Forms can also be used in replacement of Field. May use in my next project. 
 15. Okay, when pushing any new project into a repositry, make sure that my database_url is inside env folder and alongside with env, make sure that other folders like cache and local dumps inside database are not tracked by version control. Use .gitignore there. Need to fix that mistake now. 
+16. Learnt how to integrate github in my workflow and also learnt how to use Render, a cloud app deployment service. 
