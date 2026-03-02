@@ -45,7 +45,7 @@ Tables:
 2. Experiments – Linked to projects; stores experiment metadata.
 3. Runs – Linked to experiments; stores hyperparameters, status, timestamps.
 4. Metrics – Linked to runs; stores metric name, value, optional step, timestamp.
-5. Artifacts – Linked to runs; stores file paths and artifact types.
+5. Artifacts – Linked to metrics; stores file paths and artifact types.
 
 ---
 

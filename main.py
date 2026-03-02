@@ -7,6 +7,8 @@ from sqlalchemy.orm import Session
 import models
 from schemas import *
 
+from fastapi.middleware.cors import CORSMiddleware
+
 # Creating an instance of Local session
 def get_db():
     db = SessionLocal()
@@ -20,6 +22,14 @@ db_dependency = Annotated[Session, Depends(get_db)]
 
 # Creating an instance of fastapi
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all origins (for development)
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
+)
 
 # Mapping the created models to the database to create an actual database.
 models.Base.metadata.create_all(bind=engine)
