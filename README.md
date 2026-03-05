@@ -4,6 +4,12 @@
   <img src="frontend/public/logo.svg" alt="LemonFlow Logo" width="200" />
 </p>
 
+#### Live Demo
+
+[![Open App](https://img.shields.io/badge/Open-App-brightgreen)](https://lemonflow-exgk.onrender.com)
+
+⚠️ The app may take ~2 mins to wake up because it is hosted on Render free tier.
+
 ### Overview
 
 This project is a lightweight Machine Learning Experiment Tracking System built with FastAPI and PostgreSQL. It allows you to manage projects, experiments, runs, metrics, and artifacts in a structured way, similiar in concept to MLFlow, but tailored for small-scale projects and learning purposes.
