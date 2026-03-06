@@ -82,8 +82,8 @@ To run the full application locally, both services must be started separately.
 First clone the repository and move into the project directory.
 
 ```bash
-git clone https://github.com/<your-username>/<repository-name>.git
-cd <repository-name>
+git clone https://github.com/heyaankit/LemonFlow.git
+cd LemonFlow
 ```
 
 ---
