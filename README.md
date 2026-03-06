@@ -68,6 +68,8 @@ Tables:
 - Storage of artifacts in cloud (S3, GCS) instead of local paths.
 - Advanced filtering and search on metrics and parameters.
 
+---
+
 # Running the Project Locally
 
 This repository contains a **FastAPI backend** and a **Next.js frontend**.
