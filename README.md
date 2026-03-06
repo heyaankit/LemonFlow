@@ -10,6 +10,7 @@
 
 ⚠️ The app may take ~2 mins to wake up because it is hosted on Render free tier.
 
+
 ### Overview
 
 This project is a lightweight Machine Learning Experiment Tracking System built with FastAPI and PostgreSQL. It allows you to manage projects, experiments, runs, metrics, and artifacts in a structured way, similiar in concept to MLFlow, but tailored for small-scale projects and learning purposes.
@@ -67,3 +68,152 @@ Tables:
 - Storage of artifacts in cloud (S3, GCS) instead of local paths.
 - Advanced filtering and search on metrics and parameters.
 
+# Running the Project Locally
+
+This repository contains a **FastAPI backend** and a **Next.js frontend**.
+To run the full application locally, both services must be started separately.
+
+---
+
+## 1. Clone the Repository
+
+First clone the repository and move into the project directory.
+
+```bash
+git clone https://github.com/<your-username>/<repository-name>.git
+cd <repository-name>
+```
+
+---
+
+# Backend Setup (FastAPI)
+
+## 2. Create and Activate a Virtual Environment
+
+**Windows**
+
+```bash
+python -m venv env
+env\Scripts\activate
+```
+
+**Linux / macOS**
+
+```bash
+python3 -m venv env
+source env/bin/activate
+```
+
+---
+
+## 3. Install Backend Dependencies
+
+Install all required Python packages.
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 4. Configure Environment Variables
+
+Create a `.env` file in the root directory and configure the database connection.
+
+Example:
+
+```
+DATABASE_URL=postgresql+psycopg://username:password@localhost:5432/database_name
+```
+
+Make sure PostgreSQL is installed and running locally.
+
+---
+
+## 5. Run the Backend Server
+
+Start the FastAPI development server.
+
+```bash
+uvicorn main:app --reload
+```
+
+The backend will be available at:
+
+```
+http://127.0.0.1:8000
+```
+
+API documentation is available at:
+
+```
+http://127.0.0.1:8000/docs
+```
+
+---
+
+# Frontend Setup (Next.js)
+
+Open **a new terminal** and navigate to the frontend directory.
+
+## 6. Move to the Frontend Folder
+
+```bash
+cd frontend
+```
+
+---
+
+## 7. Install Node Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## 8. Start the Frontend Development Server
+
+```bash
+npm run dev
+```
+
+The frontend will run at:
+
+```
+http://localhost:3000
+```
+
+---
+
+# Running the Full Application
+
+During development you should run **both services simultaneously**.
+
+**Terminal 1 – Backend**
+
+```bash
+uvicorn main:app --reload
+```
+
+**Terminal 2 – Frontend**
+
+```bash
+cd frontend
+npm run dev
+```
+
+Then open the application in your browser:
+
+```
+http://localhost:3000
+```
+
+---
+
+# Notes
+
+* Ensure **PostgreSQL** is installed and accessible.
+* Environment variables should be stored in a `.env` file and **must not be committed to Git**.
+* The `.gitignore` file already excludes `.env`, datasets, and other non-essential files.
+* If dependencies change, rerun `pip install -r requirements.txt` or `npm install`.
