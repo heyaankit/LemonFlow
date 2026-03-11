@@ -12,7 +12,7 @@
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://postgresql.org)
 
-The live demo may take approximately 2 minutes to wake up (hosted on Render free tier)
+⚠️ The app may take ~2 mins to wake up because it is hosted on Render free tier.
 
 </div>
 
